@@ -995,8 +995,13 @@
     "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
   },
   "networks": {},
+<<<<<<< HEAD
   "schemaVersion": "3.4.3",
   "updatedAt": "2021-12-03T22:57:58.386Z",
+=======
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-12-04T20:45:25.438Z",
+>>>>>>> 01181922ac749bf1b5f54c8e76278c248c965399
   "networkType": "ethereum",
   "devdoc": {
     "methods": {
