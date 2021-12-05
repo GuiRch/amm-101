@@ -51,22 +51,36 @@ async function deployExerciceSolution(deployer, network, accounts) {
 
     myTokenAmountOwner = await ERC20Basics.balanceOf(accounts[0])
     console.log("myTokenAmountOwner " + myTokenAmountOwner)
-    // myTokenAmountOwnerToSend = myTokenAmountOwner / 1000
+
     myTokenAmountOwnerToSend = Math.pow(10, 20)
     console.log("myTokenAmountOwnerToSend " + myTokenAmountOwnerToSend)
 
     myTokenAmountBefore = await ERC20Basics.balanceOf(ExerciceSolution.address)
     console.log("myTokenAmountBefore " + myTokenAmountBefore)
+
     await ERC20Basics.transfer(ExerciceSolution.address, myTokenAmountOwnerToSend.toString())
+
     myTokenAmountAfter = await ERC20Basics.balanceOf(ExerciceSolution.address)
     console.log("myTokenAmountAfter " + myTokenAmountAfter)
-    
+        
     await Evaluator.submitExercice(ExerciceSolution.address)
     console.log("Exercice submitted")
+
+    // myEthAMount = await ExerciceSolution.balance // undefined
+    // console.log("myEthAmount " + myEthAMount)
     
     await Evaluator.ex8_contractCanSwapVsEth()
     console.log("Exercice 8 done")
 
-    await Evaluator.ex9_contractCanSwapVsDummyToken()
-    console.log("Exercice 9 done")
+    // myEthAMount = await ExerciceSolution.balance // undefined
+    // console.log("myEthAmount " + myEthAMount)
+
+    myTokenAmountAfter = await ERC20Basics.balanceOf(ExerciceSolution.address)
+    console.log("myTokenAmountAfter " + myTokenAmountAfter)
+    
+    // await Evaluator.ex9_contractCanSwapVsDummyToken()
+    // console.log("Exercice 9 done")
+
+    // await Evaluator.ex10_contractCanProvideLiquidity()
+    // console.log("Exercice 10 done")
 }
