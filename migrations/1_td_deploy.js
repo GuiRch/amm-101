@@ -44,19 +44,21 @@ async function deployExerciceSolution(deployer, network, accounts) {
     wethAddress = "0xc778417e063141139fce010982780140aa0cd5ab"
     dummyAddress = "0xFed1E3aa9fB4Cf7ccD5Ce0291deCa90a3D23bFA6"
     uniswapV2Router02Address = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
+    uniswapV2FactoryAddress = "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f"
+
     ERC20Basics = await erc20Basics.at("0x326CC27853d4C3860F964B1ffC13EB58d57705DD") // Hardcoded
 
-    ExerciceSolution = await exerciceSolution.new(wethAddress, dummyAddress, ERC20Basics.address, uniswapV2Router02Address)
+    ExerciceSolution = await exerciceSolution.new(wethAddress, dummyAddress, ERC20Basics.address, uniswapV2Router02Address, uniswapV2FactoryAddress )
     console.log("ExerciceSolution contract address : " + ExerciceSolution.address)
 
     myTokenAmountOwner = await ERC20Basics.balanceOf(accounts[0])
     console.log("myTokenAmountOwner " + myTokenAmountOwner)
 
-    myTokenAmountOwnerToSend = Math.pow(10, 20)
-    console.log("myTokenAmountOwnerToSend " + myTokenAmountOwnerToSend)
-
     myTokenAmountBefore = await ERC20Basics.balanceOf(ExerciceSolution.address)
     console.log("myTokenAmountBefore " + myTokenAmountBefore)
+
+    myTokenAmountOwnerToSend = Math.pow(10, 20)
+    console.log("myTokenAmountOwnerToSend " + myTokenAmountOwnerToSend)
 
     await ERC20Basics.transfer(ExerciceSolution.address, myTokenAmountOwnerToSend.toString())
 
@@ -81,6 +83,9 @@ async function deployExerciceSolution(deployer, network, accounts) {
     // await Evaluator.ex9_contractCanSwapVsDummyToken()
     // console.log("Exercice 9 done")
 
-    // await Evaluator.ex10_contractCanProvideLiquidity()
-    // console.log("Exercice 10 done")
+    await Evaluator.ex10_contractCanProvideLiquidity()
+    console.log("Exercice 10 done")
+
+    await Evaluator.ex11_contractCanWithdrawLiquidity()
+    console.log("Exercice 11 done")
 }

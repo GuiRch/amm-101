@@ -79,6 +79,9 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 - Points contracts `0x89Aa93ac2f2B59a1c00294815fbE6b1e8438319e`
 - Evaluator `0x90315516b2F5534ac68f109bA9412530EbECfac1`
 
+- ERC20Basics `0x326CC27853d4C3860F964B1ffC13EB58d57705DD`
+- ExerciceSolution `0x423EAe7ca207CD740dE0dCd1e695A72961a4Ab55`
+
 ## Installing
 
 

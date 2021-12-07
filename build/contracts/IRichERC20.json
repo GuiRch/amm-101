@@ -204,19 +204,19 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.6.0;\r\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\r\n\r\ninterface IRichERC20 is IERC20 \r\n{\r\n\r\n  function symbol() external view returns (string memory);\r\n}\r\n",
-  "sourcePath": "C:\\Users\\laith\\Downloads\\amm-101\\contracts\\IRichERC20.sol",
+  "sourcePath": "C:\\Users\\laith\\OneDrive\\Bureau\\Informatique\\GitHub\\_SHARED\\amm-101\\contracts\\IRichERC20.sol",
   "ast": {
     "absolutePath": "project:/contracts/IRichERC20.sol",
     "exportedSymbols": {
       "IRichERC20": [
-        2867
+        2950
       ]
     },
-    "id": 2868,
+    "id": 2951,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2858,
+        "id": 2941,
         "literals": [
           "solidity",
           "^",
@@ -229,9 +229,9 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
         "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "id": 2859,
+        "id": 2942,
         "nodeType": "ImportDirective",
-        "scope": 2868,
+        "scope": 2951,
         "sourceUnit": 894,
         "src": "25:56:10",
         "symbolAliases": [],
@@ -244,7 +244,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 2860,
+              "id": 2943,
               "name": "IERC20",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 893,
@@ -254,7 +254,7 @@
                 "typeString": "contract IERC20"
               }
             },
-            "id": 2861,
+            "id": 2944,
             "nodeType": "InheritanceSpecifier",
             "src": "109:6:10"
           }
@@ -265,9 +265,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2867,
+        "id": 2950,
         "linearizedBaseContracts": [
-          2867,
+          2950,
           893
         ],
         "name": "IRichERC20",
@@ -277,7 +277,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "95d89b41",
-            "id": 2866,
+            "id": 2949,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -285,22 +285,22 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 2862,
+              "id": 2945,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "140:2:10"
             },
             "returnParameters": {
-              "id": 2865,
+              "id": 2948,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2864,
+                  "id": 2947,
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 2866,
+                  "scope": 2949,
                   "src": "166:13:10",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -309,7 +309,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 2863,
+                    "id": 2946,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "166:6:10",
@@ -324,14 +324,14 @@
               ],
               "src": "165:15:10"
             },
-            "scope": 2867,
+            "scope": 2950,
             "src": "125:56:10",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 2868,
+        "scope": 2951,
         "src": "85:99:10"
       }
     ],
@@ -342,7 +342,7 @@
       "absolutePath": "project:/contracts/IRichERC20.sol",
       "exportedSymbols": {
         "IRichERC20": [
-          2867
+          2950
         ]
       }
     },
@@ -356,7 +356,7 @@
             ".0"
           ]
         },
-        "id": 2858,
+        "id": 2941,
         "name": "PragmaDirective",
         "src": "0:23:10"
       },
@@ -365,13 +365,13 @@
           "SourceUnit": 894,
           "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
           "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-          "scope": 2868,
+          "scope": 2951,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 2859,
+        "id": 2942,
         "name": "ImportDirective",
         "src": "25:56:10"
       },
@@ -385,11 +385,11 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            2867,
+            2950,
             893
           ],
           "name": "IRichERC20",
-          "scope": 2868
+          "scope": 2951
         },
         "children": [
           {
@@ -404,12 +404,12 @@
                   "referencedDeclaration": 893,
                   "type": "contract IERC20"
                 },
-                "id": 2860,
+                "id": 2943,
                 "name": "UserDefinedTypeName",
                 "src": "109:6:10"
               }
             ],
-            "id": 2861,
+            "id": 2944,
             "name": "InheritanceSpecifier",
             "src": "109:6:10"
           },
@@ -426,7 +426,7 @@
               ],
               "name": "symbol",
               "overrides": null,
-              "scope": 2867,
+              "scope": 2950,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "external"
@@ -439,7 +439,7 @@
                   ]
                 },
                 "children": [],
-                "id": 2862,
+                "id": 2945,
                 "name": "ParameterList",
                 "src": "140:2:10"
               },
@@ -450,7 +450,7 @@
                       "constant": false,
                       "name": "",
                       "overrides": null,
-                      "scope": 2866,
+                      "scope": 2949,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -463,32 +463,32 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 2863,
+                        "id": 2946,
                         "name": "ElementaryTypeName",
                         "src": "166:6:10"
                       }
                     ],
-                    "id": 2864,
+                    "id": 2947,
                     "name": "VariableDeclaration",
                     "src": "166:13:10"
                   }
                 ],
-                "id": 2865,
+                "id": 2948,
                 "name": "ParameterList",
                 "src": "165:15:10"
               }
             ],
-            "id": 2866,
+            "id": 2949,
             "name": "FunctionDefinition",
             "src": "125:56:10"
           }
         ],
-        "id": 2867,
+        "id": 2950,
         "name": "ContractDefinition",
         "src": "85:99:10"
       }
     ],
-    "id": 2868,
+    "id": 2951,
     "name": "SourceUnit",
     "src": "0:186:10"
   },
@@ -498,7 +498,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-05T17:26:32.915Z",
+  "updatedAt": "2021-12-07T15:37:27.917Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
